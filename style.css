@@ -4,6 +4,7 @@ body{
     text-align: center;
     overflow-x: hidden;
     -ms-overflow-style: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body::-webkit-scrollbar{
