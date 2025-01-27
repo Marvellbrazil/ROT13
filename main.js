@@ -52,7 +52,7 @@ function copyToClipboard() {
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copyText.value);
-    alert('Copied!');
+    alert('Copied to Clipboard!');
     copyText.setSelectionRange(0, 0);
     copyText.select() = false;
 }
