@@ -63,3 +63,12 @@ function link(){
     location.target = "_blank";
     location.href = this.href;
 }
+
+function confirmExit(){
+  if (window.close() == true){
+    let userConfirm = window.confirm('There's maybe unsaved data, proceed to exit?');
+      if(userConfirm){
+        window.close();
+      }
+    }
+}
