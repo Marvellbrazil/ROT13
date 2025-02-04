@@ -37,6 +37,8 @@ function encryptROT13() {
         } else if (numericColumn.indexOf(result) >= 5 && numericColumn.indexOf(result) <= 9) {
           let index = numericColumn.indexOf(result);
           output.push(numericColumn[index - perNumericColumn]);
+        } else if (result.match() != /[A-Z]/ || result.match() != /[0-9]/) {
+          output.push(result);
         } else {
           document.getElementById('decryptBox').value = 'Invalid Input';
         }
