@@ -64,11 +64,9 @@ function link(){
     location.href = this.href;
 }
 
-function confirmExit(){
-  if (window.close() == true){
-    let userConfirm = window.confirm('There's maybe unsaved data, proceed to exit?');
-      if(userConfirm){
-        window.close();
-      }
-    }
+if (window.close() == true){
+  let userConfirm = window.confirm('There's maybe unsaved data, proceed to exit?');
+    if(userConfirm){
+      window.close();
+  }
 }
